@@ -1,10 +1,10 @@
-ESP8266 ADC TEst/Comparison
+ESP8266 ADC Test/Comparison
 
 I was having a difficult time understanding how to interpret the results of the ESP8266 ADC. The popular guidance
 was to "keep the input to no more than 1 volt," which would lead you to believe that the reference for this
 ADC was 1 volt.  I found some discussions that said the reference is 0.96 volts, which given my test is close.
 
-So I put an ADS1015 ADC on a proto board and connected in with I2C, and set up a test to read the ADS1015 and the ESP8266 ADC and send the reults to a mysql database running on tha raspberry pi.
+So I put an ADS1015 ADC on a proto board and connected it with I2C, and set up a test to read the ADS1015 and the ESP8266 ADC and send the reults to a mysql database running on tha raspberry pi.
 
 Battery Monitor - Test Conditions:
 
@@ -36,4 +36,5 @@ Observations:
 	Column G is the percentage error that the ESP9266 differs from the ADS1015 (scaled by the voltage divider ratio).												
 	Error is between 0 % and 2%
 
-	As documented by Adafruit, their Lithium-Ion batteries shut off at 3 volts, hence the data ends at 3 volts :-)										
+	The battery ran the ESP8266 for 2.5 days for this test. As documented by Adafruit, their Lithium-Ion batteries shut off at 3 volts, hence the data ends at 3 volts :-)		It took about four hours to recharge the battery with the HUZZAH Feather ESP8266 plugged into a USB port on the computer (Feather charges at 100 ma)
+	 								
