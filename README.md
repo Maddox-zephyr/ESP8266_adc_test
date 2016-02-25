@@ -32,9 +32,13 @@ Column E (ESP8266_v) is the column D value multiplied by (0.96v/1024), which is 
 												
 Observations:
 
-	ESP8266 adc values are what they are.  Question is, how do these readings map to the ads1015 readings?												
-	Column G is the percentage error that the ESP9266 differs from the ADS1015 (scaled by the voltage divider ratio).												
+	ESP8266 adc values are what they are.  Question is, how do these readings map to the ads1015 readings?
+
+	Column G is the percentage error that the ESP9266 differs from the ADS1015 (scaled by the voltage divider ratio).
+													
 	Error is between 0 % and 2%
 
-	The battery ran the ESP8266 for 2.5 days for this test. As documented by Adafruit, their Lithium-Ion batteries shut off at 3 volts, hence the data ends at 3 volts :-)		It took about four hours to recharge the battery with the HUZZAH Feather ESP8266 plugged into a USB port on the computer (Feather charges at 100 ma)
-	 								
+	The battery ran the ESP8266 for 2.5 days for this test. As documented by Adafruit, their Lithium-Ion batteries shut off at 3 volts,
+	hence the data ends at 3 volts :-)  It took about four hours to recharge the battery with the HUZZAH Feather ESP8266 plugged into 
+	a USB port on the computer (Feather charges at 100 ma)
+
